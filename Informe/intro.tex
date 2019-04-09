@@ -1,0 +1,62 @@
+\section{Introducci\'on}
+Dado un conjunto de páginas web, el objetivo de PageRank es establecer un orden de importancia o ranking entre ellas. Si pensamos en la estructura de la \textit{internet}, resulta natural representarla mediante un grafo, cuyos nodos serán las páginas de la web y las aristas los enlaces (links) entre las mismas. Como veremos más adelante, la información contenida en dicho grafo posee un enorme potencial a la hora de establecer un orden de importancia entre sus nodos. Será de interés asignar a cada página un puntaje, basado en la cantidad de enlaces que apunten a ella y el peso de los mismos.
+
+\subsection{Matriz de conectividad}
+
+Esta información puede representarse mediante una \textbf{matriz de conectividad}, que llamamos $W$:
+$$
+    w_{ij} =
+    \begin{cases}
+      0 & \text{si } i = j $ (no tenemos en cuenta los autolinks)$\\
+      1 & \text{si $i \neq j$ y la página $j$ posee un link hacia la página $i$} \\
+      0 & \text{si $i \neq j$ y la página $j$ no posee un link a la página $i$}
+    \end{cases}
+$$
+Se define el grado de cada p\'agina $c_j$ como la cantidad de links salientes de la misma.
+\[c_j =  \displaystyle\sum_{i=1}^{n} w_{ij}\]
+Se evaluará la \textit{importancia} de úna página como la cantidada de links ponderados que reciba. De esta manera, una página que reciba pocos links de otras páginas \textit{importantes} puede llegar a ser mas importante que otra que reciba muchos de páginas comunes.\\
+Se define la importancia de una página como \[x_i= \displaystyle\sum_{\substack{j=1 \\c_j\neq0}}^{n} \frac{x_j}{c_j}w_{ij}\]\\
+Es importante notar que el puntaje de una página depende del puntaje de las otras.
+
+\subsection{Navegante aleatorio}
+Un modelo que aproxima mejor la realidad es el del \textbf{navegante aleatorio}. \\
+
+Este modelo se basa en una idea similar a la anterior, tomando como criterio la \textbf{probabilidad} de saltar de una página hacia otra. De esta manera, dado un conjunto de $n$ páginas, se define la probabilidad de saltar de la página $j$ a la $i$ como $a_{ij}$ tal que:
+
+$$
+    a_{ij} =
+    \begin{cases}
+      \frac{1-p}{n} + p \cdot \frac{w_{ij}}{c_j} & \text{si } c_j \neq 0 \\
+      \frac{1}{n} & \text{si } c_j = 0
+    \end{cases}
+$$
+
+y sea A $\in  \mathbb{R}^{nxn}$ a la matriz de elementos $a_{ij}$. Entonces el \textit{ranking de Page} es la soluci\'on del sistema:
+\begin{equation*}
+	A.x = x
+\end{equation*}
+que cumple $x_{i} \geq 0$ y $ \displaystyle\sum_{i} x_{i} = 1$.
+Por lo tanto, el elemento i-\'esimo $(Ax)_{i}$ es la probabilidad de encontrar al navegante aleatorio en la p\'agina $i$ sabiendo que $x_{j}$ es la probabilidad de encontrarlo en la p\'agina $j$, para $j = 1 . . . n$;\\
+Si definimos una matriz diagonal \textit{D} con los elementos $d_{jj}$ de la forma:
+$$
+    d_{ij} =
+    \begin{cases}
+      \frac{1}{c_{j}} & \text{si } c_j \neq 0 \\
+      0 & \text{si } c_j = 0
+    \end{cases}
+$$
+
+Un vector columna \textit{e} de unos de dimensi\'on $n$ y \textit{z} un vector columna cuyos componentes son:
+
+$$
+    z_{j} =
+    \begin{cases}
+      \frac{1-p}{n} & \text{si } c_j \neq 0 \\
+      \frac{1}{n} & \text{si } c_j = 0
+    \end{cases}
+$$
+
+Podemos reescribir a la matriz A como: \\
+\begin{equation*}
+A = \textit{p} \textbf{W D} + \textbf{e z}^T
+\end{equation*}

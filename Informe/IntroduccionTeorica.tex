@@ -1,0 +1,152 @@
+\section{Marco teórico}
+%Contendr´a una breve explicaci´on de la base te´orica que fundamenta los m´etodos involucrados
+%en el trabajo, junto con los m´etodos mismos. No deben incluirse demostraciones
+%de propiedades ni teoremas, ejemplos innecesarios, ni definiciones elementales (como
+%por ejemplo la de matriz sim´etrica). En vez de definiciones b´asicas es conveniente citar
+%ejemplos de bibliograf´ıa adecuada. Una cita vale m´as que mil palabras.
+El objetivo de esta secci\'on es darle formalidad a las distintas a afirmaciones y propiedades que utilizamos asi como tambi\'en una base te\'orica que fundamenta los m\'etodos involucrados en el trabajo, junto con los m\'etodos mismos.
+ \\
+\subsection{Equivalencia de la matriz}
+Comenzaremos viendo que la matriz A definida anteriormente es equivalente a \textit{p}\textbf{W D}+$ \textbf{e z}^T$, lo cual puede resultarnos \'util a la hora de resolver el sistema $A.x = x$ y de implementar una solci\'on eficaz.
+ \\
+ \\
+Para ver la igualdad $\textbf{A} = \textit{p} \textbf{W D} + \textbf{e z}^T$ podemos ver que
+\begin{equation*}
+\textbf{A}_{ij} = (\textit{p} \textbf{W D} + \textbf{e z}^T)_{ij} \quad   \forall ( 1 \leq i, j \leq n)
+\end{equation*}
+que es lo mismo, por definición de suma de matrices, que ver que:
+\begin{equation*}
+\textbf{A}_{ij} = ((\textit{p} \textbf{W D})_{ij} + (\textbf{e z}^T)_{ij})  \quad  \forall ( 1 \leq i, j \leq n)
+\end{equation*}
+ \\
+Por definición tenemos que:
+\begin{equation*}
+\textbf{A}_{ij} =  \left\{ \begin{array}{lcc}
+ (p w_{ij})/ c_{ij} + (1-p)/n & si & c_{j} \neq 0
+\\ 1 / n &si& c_{j} = 0
+\end{array}
+\right.
+\end{equation*}
+ \\
+Ahora miremos que pasa con ($\textit{p} \textbf{W D})_{ij} $.\\
+Tenemos que p es un escalar, por lo tanto ($\textit{p} \textbf{W D})_{ij} $ = $\textit{p} (\textbf{W D})_{ij} $
+\\
+\\
+Miremos $(\textbf{W D})_{ij} $:
+\\
+Por definición de multiplicación de matrices tenemos que: $(\textbf{W D})_{ij} $ = $\displaystyle \sum_{k=1}^{n} w_{ik} d_{kj}$ y como D es diagonal de la suma anterior solo va a sobrevivir los términos donde $k=j$ por lo tanto nos queda:
+\begin{equation*}
+(\textbf{W D})_{ij}  = w_{ij} d_{jj}
+\end{equation*}
+y por definición de $d_{jj}$ tenemos que:
+\begin{equation*}
+(\textbf{W D})_{ij} =  \left\{ \begin{array}{lcc}
+ (w_{ij}) / c_{ij}  & si & c_{j} \neq 0
+\\ 0 &si& c_{j} = 0
+\end{array}
+\right.
+\end{equation*}
+ \\
+donde luego multiplicamos por p:
+
+\begin{equation*}
+(\textit{p} \textbf{W D})_{ij}  = \textit{p} (\textbf{W D})_{ij} =  \left\{ \begin{array}{lcc}
+  (p w_{ij})/ c_{ij} & si & c_{j} \neq 0
+\\ 0 &si& c_{j} = 0
+\end{array}
+\right.
+\end{equation*}
+\\
+Ahora miremos $((\textbf{e z}^t))_{ij}$:
+\\
+Por definición de multiplicación de matrices:
+\begin{equation*}
+ ((\textbf{e z}^t))_{ij} = \sum_{k=1}^{n} e_{ik} (z^t)_{kj}
+\end{equation*}
+pero sabemos que e es un vector fila y $z^t$ es un vector columna.
+Por lo tanto:
+\begin{equation*}
+(\textbf{e z}^t)_{ij} = e_{ij} (z^t)_{jj}
+\end{equation*}
+ \\
+Pero $e_{i} = 1 \quad \forall i$, luego $(\textbf{e z}^t)_{ij}$ = $(z^t)_{j}$ y por definición de $z_{j}$ tenemos que:
+\begin{equation*}
+(\textbf{e z}^t)_{ij} = (z^t)_{j} =  \left\{ \begin{array}{lcc}
+   (1-p)/n & si & c_{j} \neq 0
+\\ 1/n &si& c_{j} = 0
+\end{array}
+\right.
+\end{equation*}
+ \\
+Por último, resumiendo todo, queda que:
+\begin{equation*}
+(\textit{p} \textbf{W D} + \textbf{e z}^t)_{ij} = ((\textit{p} \textbf{W D})_{ij} + (\textbf{e z}^t))_{ij}  = \left\{ \begin{array}{lcc}
+ (p w_{ij})/ c_{ij} + (1-p)/n & si & c_{j} \neq 0
+\\ 1 / n &si& c_{j} = 0
+\end{array}
+\right.
+\end{equation*}
+ \\
+Es decir: $\textbf{A}_{ij}$ = ($\textit{p} \textbf{W D} + \textbf{e z}^t)_{ij}$    $\forall ( 1 \leq i, j \leq n) $ que es lo que queriamos ver.
+ \\
+ \\
+\subsection{Aplicabilidad de Eliminación Gaussiana sin pivoteo}
+Para resolver el Page Rank, utilizaremos Eliminación Gaussiana (EG) sin pivoteo, para resolver el siguiente sistema lineal:
+\begin{equation*}
+(\textbf{I} - \textit{p } \textbf{W D}) x = \gamma \textbf{ e}
+\end{equation*}
+donde $\gamma = \textbf{z}^T \textbf{x}$ y suponemos $\gamma = 1$.	\\
+Para esto, resulta fundamental probar que la forma de la matriz (\textbf{I} - \textit{p} \textbf{W D}) garantiza la aplicabilidad de EG sin pivoteo.\\
+\underline{Veamos:} \\
+Definimos la matriz M de la siguiente forma:
+\begin{equation*}
+(\textit{p} \textbf{W D})_{i,j} = \left\{ \begin{array}{lcc}
+ (p w_{ij})/ c_{j}  &si& c_{j} \neq 0
+\\ 0 &si& c_{j} = 0
+\end{array}
+\right.
+\end{equation*}
+
+\begin{equation*}
+(M)_{ij}=(\textbf{I} - \textit{p} \textbf{W D})_{i,j} = \left\{ \begin{array}{lcc}
+ (-p w_{ij})/ c_{j}  &si& i \neq j \:\:\: y  \:\:\: c_{j} \neq 0
+\\ 0 &si& i \neq j \:\:\: y  \:\:\: c_{j} = 0
+\\ 1 &si& i = j
+\end{array}
+\right.
+\end{equation*}
+ \\
+ \\
+\underline{Afirmacion:} La matriz definida arriba es estrictamente diagonal dominante por columnas.\\
+ \\
+\underline{Demostraci\'on:} Si queremos ver que es estrictamente diagonal dominante por columnas, lo que tenemos que probar es que para la matriz M:
+\begin{equation*}
+\forall j \in \lbrace 1,...,n \rbrace \quad \left| { m }_{ jj } \right| >\displaystyle \sum _{ i = 1\ i \neq  j }^{ n }{ \left| { m }_{ ij } \right|  }
+\end{equation*}
+Por la forma en que definimos la matriz M, podemos concluir que los elementos de su diagonal siempre van a ser 1.\\
+Adem\'as, cuando $i \neq j$, tambi\'en se puede reemplazar $|m_{ij}|$ por $\frac{p.w_{ij}}{c_{j}}$ cuando $c_{j} \neq 0$ y por $0$ cuando $c_{j} = 0$. De modo que lo que deber\'iamos probar es que simult\'aneamenete se cumple:
+
+\begin{equation}
+\forall j \in \lbrace 1,...,n \rbrace \ / c_{j} \neq 0 \quad  1  >\sum _{ i = 1 \ i \neq j }^{ n }{ \left| \frac { p.{ w }_{ ij } }{ { c }_{ j } }  \right|  }
+\end{equation}
+\begin{equation}
+\forall j \in  \lbrace 1,...,n \rbrace \ / c_{j} = 0 \quad  1  >\sum _{ i = 1 \ i \neq j }^{ n }{ 0 }
+\end{equation}
+Claramente la segunda de las sentencias que declaramos es v\'alida, ya que $1 > 0$, por lo que solo resta analizar la primera. \\
+Al remover las constantes de la sumatoria queda:
+\begin{equation*}
+\forall j \in \lbrace 1,...,n \rbrace \ / c_{j} \neq 0 \quad  1  >\frac{p}{c_{j}} \sum _{ i = 1 \ i \neq j }^{ n }{ w_{ij} }
+\end{equation*}
+Recordando la definici\'on de $c_{j}$:
+\begin{equation*}
+\forall j \in \lbrace 1,...,n \rbrace \quad c_{j} = \sum _{ i = 1 \ i \neq j }^{ n }{ w_{ij} }
+\end{equation*}
+\underline{Observaci\'on:} Nuestra sumatoria tiene un sumando menos (cuando $i = j$), pero es trivial que por la definici\'on de W ese sumando ser\'ia $0$, pues W tiene $0$ en todo su diagonal.\\
+Simplificando,
+\begin{equation*}
+1 > p
+\end{equation*}
+Y como $p \in (0,1)$, esto resulta cierto.\\
+Luego, M es estrictamente diagonal dominante por columnas. Por lo tanto el algoritmo de EG no requiere permutaciones, es decir que la matriz $(\textit{I} - \textit{p} \textbf{W D})$ garantiza la aplicabilidad de EG sin pivoteo. Asimismo, esto nos garantiza estabilidad n\'umerica, pues en cada paso del algoritmo de EG estamos dividiendo por el elemento de mayor tamaño, reduciendo al m\'aximo posible los errores de precisi\'on.\\
+\\
+\\

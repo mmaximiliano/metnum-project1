@@ -1,0 +1,19 @@
+\section{Conclusiones}
+%Esta secci´on debe contener las conclusiones generales del trabajo. Se deben mencionar
+%las relaciones de la discusi´on sobre las que se tiene certeza, junto con comentarios
+%y observaciones generales aplicables a todo el proceso. Mencionar tambi´en posibles
+%extensiones a los m´etodos, experimentos que hayan quedado pendientes, etc.
+
+Se nos pidió realizar un sistema de ranking de páginas web que utilice el algoritmo de page rank explicado en el enunciado del trabajo práctico.\\
+
+Escribimos el algoritmo en C++ usando nuestra propia implementación de matriz rala para ahorrar espacio en memoria y tiempo al ejecutar el programa. Támbien utilizamos el algoritmo de eliminación gaussiana visto en clase para poder resolver el problema.\\
+
+Pudimos resolver las pruebas planteadas por la catedra con mejor aproximación de la que se pedía y en un tiempo similar.\\
+
+Igualmente quisimos realizar experimentos para encontrar posibles mejoras y poner a prueba nuestro programa. Decidimos por un lado, probar lo que aprendimos en las clases de laboratorio sobre precisión de datos y por otro ver si se cumple lo que el algoritmo de page rank propone.\\
+
+En las clases de laboratorio vimos distintos tipos de representación de datos como float, double y long double. Quisimos experimentar sobre qué tipo de dato produce menos error en nuestro programa. Llegamos a la conclusión que si bien long double y double tienen un error parecido conviene usar double, ya que ocupa menos lugar en memoria.\\
+
+También vimos distintas formas de sumar valores no enteros. Quisimos probar cual producía menos error en nuestro programa. Como mencionamos anteriormente, no encontramos ningún algoritmo que se destaque más que otro.\\
+
+Por último hicimos experimentaciones sobre el algoritmo de page rank. Page rank propone que puede calcular la importancia de una página contando la cantidad de links y la cálidad de cada uno. Es decir, los links de páginas importantes valen más. Pudimos concluir que esto es cierto en el experimento roba éxito que planteamos. Además experimentamos como influye el modelo del navegante aleatorio en el proceso de obtener el page rank de una página. Siempre cuando p tiende a 0 todas las páginas tienen aproximadamente un mismo ranking. Luego el valor de p influye de manera distinta a cada sistema dependiendo de su estructura.

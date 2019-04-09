@@ -1,0 +1,65 @@
+\section{Discusión}
+%Se incluir´a aqu´ı un an´alisis de los resultados obtenidos en la secci´on anterior (se analizar´a
+%su validez, coherencia, etc.). Deben analizarse como m´ınimo los ´ıtems pedidos en el
+%enunciado. No es aceptable decir que “los resultados fueron los esperados”, sin hacer
+%clara referencia a la teor´ıa a la cual se ajustan. Adem´as, se deben mencionar los resultados
+%interesantes y los casos “patol´ogicos” encontrados.
+
+% \subsection{Experimentación sobre predicados teóricos}
+% \subsubsection{El valor de $p$ y el error del sistema}
+% En la Figura 1 se puede observar claramente que a medida que $p$ crece, el error del sistema aumenta.
+% De todas formas, si bien el valor de $p$ afecta la precisión de la solución, nuestro algoritmo se sigue comportando bien y 
+% dentro de los parámetros aceptables en todo el espectro de $p$, ya que incluso con un $p$ cercano a uno, el error sigue en el 
+% \'orden de $10^{-17}$.
+
+\subsection{Experimentación con estructuras de datos}
+Como vemos en las Figuras 1 y 2, el vector resulta mejor en cuanto a tiempos de ejecución. Dicha estructura tiene ciertas ventajas, como el uso eficiente de la memoria cache y su simplicidad en el uso de la memoria (por ejemplo, no requiere pedir y liberar memoria tan frecuentemente como el mapa).
+
+
+\subsection{Experimentación cuantitativa}
+\subsubsection{Aproximación de la solución}
+Como vemos en la Tabla 1, nuestro programa hace una buena aproximación a la solución, siendo perfecta en el caso trivial. En los tests más simples (sin links y completo), se ve que la implementación se encuentra con pocos problemas, teniendo un error del orden de $10^{-17}$. Con tests más complejos, este error aumenta, pero incluso en los tests intensivos de 15 y 30 segundos se comporta dentro de lo esperable con errores del orden de $10^{-7}$.
+
+\subsubsection{Error absoluto con respecto a los tests de la cátedra}
+En la Tabla 2 podemos ver que nuestra implementación da resultados iguales a los de la cátedra en la mayoría de los casos. La única diferencia se encuentra en los tests más intensivos (de 15 y 30 segundos), donde se encuentra una pequeña discrepancia del orden de $10^{-7}$.
+
+
+\subsection{Experimentación sobre distintas implementaciones}
+\subsubsection{Error con distintos tipos de datos para almacenar punto flotante}
+Al realizar la implementación, intentamos evitar distintas fuentes de imprecisión, una de ellas siendo los tipos de datos. Por esto, desde el inicio usamos \textit{long double}, que utiliza más memoria que los otros tipos de datos de punto flotante. Sin embargo, como se puede ver en la Tabla 3, no hay diferencia en el error al usar este tipo o \textit{double}. Lo que sí se puede diferenciar es entre estos dos y \textit{float}, teniendo éste errores ligeramente mayores, pero casi insignificantes.
+
+\subsubsection{Error con distintos tipos de sumatoria}
+Al probar distintos tipos de sumatorias para normalizar el resultado, esperábamos que este fuera una fuente de imprecisiones. Sin embargo, como se ve en la Tabla 4, tanto la suma más simple, como la que ordena antes los números, y la que usa el algoritmo de Kahan, dan un error exactamente igual, por lo que vemos que no es un paso crítico en la pérdida de precisión.
+
+
+\subsection{Experimentación cualitativa sobre distintas estructuras de grafos}
+\subsubsection{Malla}
+En la Figura 3 podemos observar que independientemente de la probabilidad de saltar a otra página del conjunto, el ranking se mantiene igual en todas las páginas.
+Siendo este un caso muy sencillo, podemos fácilmente ver que el algoritmo de Page Rank está haciendo lo que debe.
+En este caso muy particular donde ninguna página es mejor que otra, es esperable y también es efectivamente el resultado, que el ranking sea el mismo para todas.
+
+\subsubsection{Página popular}
+Con la Figura 4 podemos notar que la Página 1, nuestra página popular, efectivamente se lleva el primer lugar en el Ranking de Page.
+Más aún, todas las otras páginas tienen exactamente el mismo ranking, están todas empatadas en el segundo lugar.
+Esto tiene mucho sentido, dado que la Página 1 recibe links de todas las páginas del conjunto, mientras todas las demas, no reciben links.
+Sus puntajes dependen exclusivamente del valor de $p$. La única razon por la que sus valores no son despreciables, es que todavia tienen
+probabilidad de ser visitadas espontaneamente gracias a que la probabilidad de elegir una página del sistema de forma aleatoria es $1 - p$, y para este experimento $p = 0.65$.\\
+
+Con los gráficos de la Figura 5, se puede observar que a medida que $p$ crece, el mejor ranking es aún mejor, y de la misma forma,
+el peor ranking es aún peor. También se puede ver en el segundo gráfico que la diferencia entre ambos gráficos crece. Pero lo que resulta más importante para este experimento, es que cuando $p$ toma un valor muy cercano a 0, la diferencia entre el mejor ranking y el peor (o los peores, esperando que los 4 peores sean iguales como sucedió con $p = 0.65$) también toma un valor cercano a cero.
+Con estos resultados podemos concluir que nuestra hipótesis es cierta. Esto se explicaría con que, si la probabilidad de saltar
+a otra página del sistema es muy alta $(1 - p)$, entonces la probabilidad de caer en cualquier página tiende a ser equiprobable, y por lo tanto el ranking es (casi) un empate.
+
+\subsubsection{Escalonado}
+Como se puede ver en la Figura 6, el resultado fue el esperado. La página 5 es el final de la cadena, de cierta forma todos los links del sistema terminan eventualmente en esta página.
+Por lo que era esperable que esta sea la página con mejor ranking. Más aún, la página 1 es el inicio de la cadena, ningún link la apunta, por lo cual también tiene
+sentido que sea la página con peor ranking. \\
+
+Sin embargo, si bien el orden de los rankings fue el predicho, esperábamos que los valores estén aún más inclinados al final de la cadena.\\
+
+Con el resultado de este experimento en la Figura 7 podemos concluir que cuando $p$ toma un valor muy pequeño,
+arruina el ranking del sistema. Ya que los valores del ranking resultan muy similares, implicando que existe una uniformidad en la probabilidad de caer en cualquier página.
+
+\subsubsection{Roba éxito}
+Tal como muestra la Figura 8, los resultados de este experimento fueron los esperados. La Página 1 es la más popular, seguida de la Página 2, y en tercer puesto con un cuádruple empate, el resto de las páginas.
+Es un resultado muy satisfactorio, dado que demuestra este aspecto tan importante del algoritmo.

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="solucion"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\tests\;CMake Files\tests\google-test\;CMake Files\tests\google-test\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tp1">
+				<Option output="/Users/etorres/Facu/metnum-tp1/tp1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 tp1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tp1/fast">
+				<Option output="/Users/etorres/Facu/metnum-tp1/tp1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 tp1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generateMatrixA">
+				<Option output="/Users/etorres/Facu/metnum-tp1/generateMatrixA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 generateMatrixA"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generateMatrixA/fast">
+				<Option output="/Users/etorres/Facu/metnum-tp1/generateMatrixA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 generateMatrixA/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTests">
+				<Option output="/Users/etorres/Facu/metnum-tp1/correrTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 correrTests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTests/fast">
+				<Option output="/Users/etorres/Facu/metnum-tp1/correrTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 correrTests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrValgrind">
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 correrValgrind"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTestsMatrizDiagonal">
+				<Option output="/Users/etorres/Facu/metnum-tp1/correrTestsMatrizDiagonal" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 correrTestsMatrizDiagonal"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTestsMatrizDiagonal/fast">
+				<Option output="/Users/etorres/Facu/metnum-tp1/correrTestsMatrizDiagonal" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 correrTestsMatrizDiagonal/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTestsMatrizRala">
+				<Option output="/Users/etorres/Facu/metnum-tp1/correrTestsMatrizRala" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 correrTestsMatrizRala"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTestsMatrizRala/fast">
+				<Option output="/Users/etorres/Facu/metnum-tp1/correrTestsMatrizRala" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 correrTestsMatrizRala/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTestsCatedra">
+				<Option output="/Users/etorres/Facu/metnum-tp1/correrTestsCatedra" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 correrTestsCatedra"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTestsCatedra/fast">
+				<Option output="/Users/etorres/Facu/metnum-tp1/correrTestsCatedra" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 correrTestsCatedra/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/Users/etorres/Facu/metnum-tp1/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/Users/etorres/Facu/metnum-tp1/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/Users/etorres/Facu/metnum-tp1/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/Users/etorres/Facu/metnum-tp1/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/src"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test"/>
+					<Add directory="/Users/etorres/Facu/metnum-tp1/tests/google-test/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/etorres/Facu/metnum-tp1/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/src/generateMatrixA.cpp">
+			<Option target="generateMatrixA"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/src/matriz/MatrizDiagonal.cpp">
+			<Option target="tp1"/>
+			<Option target="generateMatrixA"/>
+			<Option target="correrTests"/>
+			<Option target="correrTestsMatrizDiagonal"/>
+			<Option target="correrTestsMatrizRala"/>
+			<Option target="correrTestsCatedra"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/src/matriz/MatrizDiagonal.h">
+			<Option target="tp1"/>
+			<Option target="generateMatrixA"/>
+			<Option target="correrTests"/>
+			<Option target="correrTestsMatrizDiagonal"/>
+			<Option target="correrTestsMatrizRala"/>
+			<Option target="correrTestsCatedra"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/src/matriz/MatrizRala.cpp">
+			<Option target="tp1"/>
+			<Option target="generateMatrixA"/>
+			<Option target="correrTests"/>
+			<Option target="correrTestsMatrizDiagonal"/>
+			<Option target="correrTestsMatrizRala"/>
+			<Option target="correrTestsCatedra"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/src/matriz/MatrizRala.h">
+			<Option target="tp1"/>
+			<Option target="generateMatrixA"/>
+			<Option target="correrTests"/>
+			<Option target="correrTestsMatrizDiagonal"/>
+			<Option target="correrTestsMatrizRala"/>
+			<Option target="correrTestsCatedra"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/src/matriz/Tipos.h">
+			<Option target="tp1"/>
+			<Option target="generateMatrixA"/>
+			<Option target="correrTests"/>
+			<Option target="correrTestsMatrizDiagonal"/>
+			<Option target="correrTestsMatrizRala"/>
+			<Option target="correrTestsCatedra"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/src/matriz/resolver.cpp">
+			<Option target="tp1"/>
+			<Option target="generateMatrixA"/>
+			<Option target="correrTests"/>
+			<Option target="correrTestsMatrizDiagonal"/>
+			<Option target="correrTestsMatrizRala"/>
+			<Option target="correrTestsCatedra"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/src/matriz/resolver.h">
+			<Option target="tp1"/>
+			<Option target="generateMatrixA"/>
+			<Option target="correrTests"/>
+			<Option target="correrTestsMatrizDiagonal"/>
+			<Option target="correrTestsMatrizRala"/>
+			<Option target="correrTestsCatedra"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/src/tp1.cpp">
+			<Option target="tp1"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/tests/google-test/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/tests/google-test/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/tests/test_matriz_diagonal.cpp">
+			<Option target="correrTests"/>
+			<Option target="correrTestsMatrizDiagonal"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/tests/tests_catedra.cpp">
+			<Option target="correrTests"/>
+			<Option target="correrTestsCatedra"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/tests/tests_matriz_rala.cpp">
+			<Option target="correrTests"/>
+			<Option target="correrTestsMatrizRala"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/tests/google-test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\google-test\"/>
+		</Unit>
+		<Unit filename="/Users/etorres/Facu/metnum-tp1/tests/google-test/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\tests\google-test\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
